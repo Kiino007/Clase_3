@@ -69,12 +69,12 @@ num = [7, 3, 5, 2, 6]
 n = len(num)
 
 for i in range(1 , n):
-    clave = num [i]
+    clave = num[i]
     j = i - 1
     while j >= 0 and num[j] > clave:
         num[j + 1] = num[j]
         j -= 1
-    numeros[j + 1] = clave
+    num[j + 1] = clave
 
 print(f"Lista ordenada con insertion: {num}")
 
