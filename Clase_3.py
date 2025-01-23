@@ -63,3 +63,17 @@ print(f"lista ordnada con bubble sort: {numeros}")
 
 #En el mejor de los casos es lineal
 #En el peor de los casos es cuadratico 
+#Especialmente hablando es constante 
+
+num = [7, 3, 5, 2, 6]
+n = len(num)
+
+for i in range(1 , n):
+    clave = num [i]
+    j = i - 1
+    while j >= 0 and num[j] > clave:
+        num[j + 1] = num[j]
+        j -= 1
+    numeros[j + 1] = clave
+
+print(f"Lista ordenada con insertion: {num}")
